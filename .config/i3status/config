@@ -1,0 +1,19 @@
+general {
+        interval = 5
+}
+
+order += "disk /"
+order += "memory"
+order += "time"
+
+time {
+	format = "  %H:%M  %d-%m-%Y"
+}
+
+memory {
+        format = "  %used/%available "
+}
+
+disk "/" {
+    format = "  %avail "
+}
